@@ -44,15 +44,18 @@
               </p>
               <button type = "button">Submit your answer!!!</button>
             </fieldset>
+          </form>
             <p>If you said any 3 of these, you were wrong. Not because you got the answer correct, which is all of them, but because your answers are not being saved or sent anywhere as a result of me not knowing
             how to implement this yet (nor am I allowed to use JavaScript until later).</p>
             <p>However, if I did want to do an actual quiz and you picked the wrong answer, this is how I'd imagine the hint button to look like.</p>
+          <form method = "dialog">
             <button command = "show-modal" command-for = "hint-1">Hint</button>
             <dialog id= "hint-1">
               <p*HINT* trick question!"</p>
                 <button command = "close" command-for = "hint-1">Okay, thanks</button>
             </dialog>
             <button popovertarget="my-dialog">Open dialog</button>
+          </form>
 
 <dialog id="my-dialog" popover>
   <p>This dialog was opened using a popovertargetaction attribute.</p>
